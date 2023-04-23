@@ -3,6 +3,7 @@ package com.omali.kotlinbasic01_omali
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.clickBtn
 import kotlinx.android.synthetic.main.activity_main.smallBtn
 
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        smallBtn
+        smallBtn.setOnClickListener {
+
+            Toast.makeText(this, "작은 버튼 눌림", Toast.LENGTH_SHORT).show()
+        }
     }
 }
